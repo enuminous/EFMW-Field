@@ -1,0 +1,32 @@
+name: EFMW Master Lab Explorer checks
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  atlas-integrity:
+    name: Catalog provenance, links and browser controls
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out research explorer
+        uses: actions/checkout@v4
+      - name: Configure Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Validate static source syntax
+        run: |
+          node --check assets/explorer.js
+          node --check data/labs.js
+      - name: Run complete catalog and UI smoke suite
+        run: node --test tests/catalog.test.cjs
+      - name: Report bounds
+        run: |
+          echo "Status: SOFTWARE INTEGRITY CHECK, NOT PHYSICAL VALIDATION"
+          echo "Published project: https://github.com/enuminous/EFMW-Field"
