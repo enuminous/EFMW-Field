@@ -176,7 +176,8 @@ test("availability filters separate sites, source-only repositories and subpages
 test("sector click scopes the directory and more-results pagination increments",()=>{
   const h=newHarness();
   h.el("sectorGrid").events.click({target:{closest:()=>({getAttribute:()=>"Physics & cosmos"})}});
-  assert.match(h.el("resultsCount").textContent,/OF 22 MATCHING/);
+  const physicsEntries=atlas.repositories.filter(x=>x.category==="Physics & cosmos").length + atlas.subpages.filter(x=>x.category==="Physics & cosmos").length;
+  assert.match(h.el("resultsCount").textContent,new RegExp("OF "+physicsEntries+" MATCHING"));
   h.el("categoryFilter").events.change({target:{value:"all"}});
   assert.match(h.el("resultsCount").textContent,/SHOWING 24 OF 178/);
   h.el("showMore").events.click();
