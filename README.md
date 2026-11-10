@@ -9,6 +9,20 @@ This repository is the public front door for a **conceptual and mathematical int
 
 **Scientific status: CONCEPTUAL SYNTHESIS / RESEARCH PROPOSAL. No independently validated EFMW-specific physical field, gravitational coupling, fifth force, precognitive effect, or discovery is asserted.**
 
+## Master Lab Explorer
+
+**[Open the interactive EFMW Field Master Lab Explorer](index.html)** — searchable, filterable catalog of the `enuminous` research network.
+
+The atlas currently includes **159 public repositories**, **70 public GitHub Pages roots verified as accessible on November 10, 2026**, and **19 separately linked laboratory views and reports**. The remaining repositories have source links instead of unverified or broken Pages links. Discovery includes individual Zoo-agent repositories, not merely the core physics dashboards.
+
+The explorer provides five cross-research pathways, sector filtering, full-text search, live-Pages/source-only distinctions, personal bookmarks (stored locally), copyable lab URLs, CSV export and a source-grounded research reading room.
+
+**Primary files:** [index.html](index.html) · [Machine-readable catalog](data/labs.json) · [Browser catalog mirror](data/labs.js) · [Catalog provenance and maintenance](docs/MASTER_LAB_INDEX.md) · [Verification tests](tests/catalog.test.cjs).
+
+**Expected public Pages address:** https://enuminous.github.io/EFMW-Field/ . This URL requires GitHub Pages to be enabled for the repository; the presence of `index.html` alone does not establish deployment. To enable: **Settings → Pages → Deploy from a branch → main / (root)**. The same index also works when the repository folder is opened locally.
+
+> **Do not confuse site availability with scientific validation.** The live-Pages status is a dated reachability check. It does not imply that the associated hypotheses, simulations, or physical interpretations passed scientific review.
+
 ## Read the foundational paper
 
 ### [The Meaning of the EFMW Field — Present State, Retained History, Recursive Response](The-Meaning-of-the-EFMW-Field-2026-11-10.md)
