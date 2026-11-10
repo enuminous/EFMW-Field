@@ -2196,7 +2196,7 @@
       "id": "simulation",
       "title": "Visualization → interaction → data",
       "category": "Simulators & worlds",
-      "note": "Interactive model family and demonstrations; examine each lab's assumptions and controls.",
+      "note": "Interactive model family and demonstrations, not proof of new physical fields; examine each lab's assumptions and controls.",
       "steps": [
         "Archimedes-Engine",
         "Archimedes-3D",
