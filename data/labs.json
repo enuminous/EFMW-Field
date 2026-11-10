@@ -12,8 +12,7 @@
     "Zoo agents & audits",
     "Simulators & worlds",
     "Publications & culture",
-    "Infrastructure",
-    "Other research"
+    "Infrastructure"
   ],
   "repositories": [
     {
@@ -1447,12 +1446,12 @@
     {
       "id": "oph-lab",
       "name": "oph-lab",
-      "category": "Other research",
+      "category": "Physics & cosmos",
       "kind": "repository",
       "access": "unavailable",
       "repo": "https://github.com/enuminous/oph-lab",
       "site": null,
-      "description": "OpH sampling and observability experiments",
+      "description": "OpH sampling, envelope and gauge-observability laboratory; check the repository for experimental status.",
       "researchStatus": "Project-specific; check source evidence ledger",
       "featured": false
     },
